@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, #061de3, #e306ca);
+  font-family: Helvetica, sans-serif;
+  color: rgb(250, 250, 250);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px auto 100px;
+
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+}
+
+header {
+  grid-area: h;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3rem;
+}
+
+main {
+  grid-area: m;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+footer {
+  grid-area: f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}

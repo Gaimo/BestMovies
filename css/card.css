@@ -1,0 +1,45 @@
+.card-container {
+    width: 35rem;
+    height: 50rem;
+    perspective: 80rem;
+}
+
+.card-container:hover>.card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.card__front,
+.card__back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 2rem;
+}
+
+.card__back {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.card__title {
+    font-size: 3rem;
+}
+
+.card__description {
+    font-size: 1.8rem;
+}
