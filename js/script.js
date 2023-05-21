@@ -59,7 +59,7 @@ function importJSON(url) {
 }
 
 // Path to the external JSON file
-const jsonURL = '../movies.json';
+const jsonURL = 'https://gaimo.github.io/BestMovies/movies.json';
 
 // Call the function to import and create the cards
 importJSON(jsonURL);
