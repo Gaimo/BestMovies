@@ -28,6 +28,10 @@
     padding: 2rem;
 }
 
+.card__front {
+    background-size: cover;
+}
+
 .card__back {
     background-color: #3a3a3a;
     transform: rotateY(180deg);
