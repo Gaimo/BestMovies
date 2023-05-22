@@ -10,7 +10,6 @@ html {
 
 body {
   height: 100vh;
-  overflow: hidden;
   background: linear-gradient(45deg, #061de3, #e306ca);
   font-family: Helvetica, sans-serif;
   color: rgb(250, 250, 250);
@@ -27,15 +26,18 @@ body {
 header {
   grid-area: h;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
+  text-align: center;
   font-size: 3rem;
 }
 
 main {
   grid-area: m;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
 }
@@ -46,4 +48,18 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1200px){
+  header {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+	header {
+    font-size: 1.6rem; 
+    margin-bottom: 1.4rem;
+    padding: 2rem;
+  }
 }
